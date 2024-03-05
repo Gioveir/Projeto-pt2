@@ -1,19 +1,17 @@
 import React from "react";
 import { Text, StyleSheet} from "react-native";
 
-
-
 function Titulo (props){
     return(
-        <Text style={css.titulo}>{props.titulo}</Text>
+        <Text style={styles.titulo}>{props.titulo}</Text>
     )
 }
 
-const css = StyleSheet.create({
+const styles = StyleSheet.create({
     titulo :{ 
-        color:'rgb(126 ,87 ,194)',
-        fontSize:40
+        color: 'rgb(213, 22, 38)', // Vermelho do Flamengo
+        fontSize: 40
     }
 });
-export default Titulo
 
+export default Titulo;

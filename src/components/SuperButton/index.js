@@ -4,12 +4,12 @@ import { TouchableHighlight,StyleSheet, View,Text, Alert } from "react-native";
 const SuperButton = (props) =>{
     return(
         <TouchableHighlight 
-        style={style.SuperButton}
+        style={styles.superButton}
         onPress={()=>Alert.alert("SUCESSO!!!")}
         >
 
-            <View style = {style.button}>
-                <Text style={style.valor}>{props.valor}</Text>
+            <View style = {styles.button}>
+                <Text style={styles.valor}>{props.valor}</Text>
             </View>
 
         </TouchableHighlight>
@@ -17,13 +17,13 @@ const SuperButton = (props) =>{
     );
 }
 
-const style = StyleSheet.create({
-    SuperButton:{
+const styles = StyleSheet.create({
+    superButton:{
 
     },
     button: {
         alignItems: "center",
-        backgroundColor: 'rgb(126 ,87 ,194)',
+        backgroundColor: 'rgb(213, 22, 38)', // Vermelho do Flamengo
         padding:12,
         width:300,
     },
